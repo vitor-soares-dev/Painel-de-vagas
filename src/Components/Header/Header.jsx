@@ -4,6 +4,7 @@ import { useTheme } from "../../contexts/ThemeContext";
 
 export default function Header() {
   const { user, logout } = useAuth();
+
   const { darkMode, toggleTheme } = useTheme();
 
   return (
