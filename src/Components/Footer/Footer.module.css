@@ -1,0 +1,15 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    width: 100%;
+    margin-top: auto; /* Empurra o rodapé para o final da página */
+  }
+  
+  /* Estilos para o tema escuro (opcional, para combinar com o Header) */
+  .footer.dark {
+    background-color: #1a202c;
+    color: #a0aec0;
+    border-top: 1px solid #2d3748;
+  }
