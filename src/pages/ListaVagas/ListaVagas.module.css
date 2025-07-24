@@ -1,0 +1,121 @@
+/* Estilo do container principal da lista de vagas */
+.listaVagas {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+  }
+  
+  .listaVagas h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2rem;
+  }
+  
+  /* Container do campo de busca */
+  .inputContainer {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  /* Ícone de busca dentro do input */
+  .searchIcon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 1.2rem;
+  }
+  
+  /* Estilo do input de filtro */
+  .inputFiltro {
+    width: 100%;
+    padding: 12px 12px 12px 45px; /* Aumenta o padding esquerdo para o ícone */
+    border: 1px solid #ddd;
+    border-radius: 25px; /* Bordas arredondadas para um visual moderno */
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* Garante que padding não afete a largura total */
+  }
+  
+  .inputFiltro:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Lista de vagas */
+  .vagasList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Item individual da lista */
+  .vagaItem {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #007bff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .vagaItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vagaItem strong {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .vagaItem span {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* --- Media Queries para Responsividade --- */
+  
+  /* Para telas menores (tablets) */
+  @media (max-width: 768px) {
+    .listaVagas {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    .listaVagas h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* Para telas muito pequenas (smartphones) */
+  @media (max-width: 480px) {
+    .listaVagas h2 {
+      font-size: 1.5rem;
+    }
+  
+    .vagaItem {
+      flex-direction: column; /* Empilha o título e o tipo */
+      align-items: flex-start;
+      gap: 10px; /* Adiciona um espaço entre o título e o tipo */
+    }
+  
+    .vagaItem strong {
+      font-size: 1rem;
+    }
+  }

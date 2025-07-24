@@ -1,0 +1,42 @@
+
+.filtro-container {
+  background-color: #f0f0f0; 
+  padding: 20px;            
+  border-radius: 8px;       
+  margin-bottom: 20px;      
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.filtro-row {
+  display: flex;        
+  align-items: center;  
+  margin-bottom: 15px;  
+}
+
+.filtro-row label {
+  margin-right: 10px; 
+  font-weight: bold;  
+  width: 120px;       
+}
+
+.filtro-row select {
+  flex-grow: 1;       
+  padding: 8px;       
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+}
+
+button {
+  background-color: #007bff; 
+  color: white;             
+  padding: 10px 15px;       
+  border: none;            
+  border-radius: 5px;      
+  cursor: pointer;          
+  width: 100%;              
+  font-size: 16px;         
+}
+
+button:hover {
+  background-color: #0056b3; 
+}

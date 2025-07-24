@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./Login.module.css";
 import { useAuth } from "../../contexts/AuthContext";
 import { useNavigate } from "react-router";
 
@@ -21,23 +22,30 @@ export function Login() {
   };
 
   return (
-    <div className="login-container">
-      <form className="login-form" onSubmit={handleSubmit}>
+    // 2. Aplique as classes usando o objeto 'styles'
+    <div className={styles.loginContainer}>
+      <form className={styles.loginForm} onSubmit={handleSubmit}>
         <h2>Login</h2>
-        {error && <p className="error">{error}</p>}
+        {error && <p className={styles.error}>{error}</p>}
         <input
+          // Adicionando uma classe para consistência
+          className={styles.inputField}
           type="email"
           placeholder="E-mail"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
+          // Adicionando uma classe para consistência
+          className={styles.inputField}
           type="password"
           placeholder="Senha"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Entrar</button>
+        <button type="submit" className={styles.submitButton}>
+          Entrar
+        </button>
       </form>
     </div>
   );

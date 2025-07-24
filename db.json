@@ -1,16 +1,22 @@
 {
   "jobs": [
     {
-      "id": "11df",
-      "titulo": "front-end",
-      "tipo": "remoto",
-      "empresa": "firjan"
+      "id": "700d",
+      "titulo": "Designer Grafico",
+      "tipo": "CLT",
+      "empresa": "Firjan"
     },
     {
-      "id": "1322",
-      "titulo": "back-end",
-      "tipo": "remoto",
-      "empresa": "firjan"
+      "id": "fcf7",
+      "titulo": "Back-end",
+      "tipo": "Remoto",
+      "empresa": "Firjan"
+    },
+    {
+      "id": "feb3",
+      "titulo": "Front-end",
+      "tipo": "Remoto",
+      "empresa": "Firjan"
     }
   ]
 }

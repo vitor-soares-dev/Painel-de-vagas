@@ -1,0 +1,216 @@
+/* Container principal do painel administrativo */
+.adminContainer {
+  font-family: 'Arial', sans-serif;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* --- Dark Mode --- */
+.adminContainer.dark {
+  background-color: #242526;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+/* --- --- */
+
+.adminHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+/* --- Dark Mode --- */
+.adminContainer.dark .adminHeader {
+  border-bottom-color: #393a3b;
+}
+
+.adminContainer.dark .adminHeader h2 {
+  color: #e4e6eb;
+}
+/* --- --- */
+
+.adminHeader h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Estilo do botão de criar vaga */
+.createButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #28a745; /* Verde */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.createButton:hover {
+  background-color: #218838; /* Verde mais escuro */
+}
+
+/* Estilo da seção de filtro */
+.filtro {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+/* --- Dark Mode --- */
+.adminContainer.dark .searchIcon {
+  color: #a8abaf;
+}
+/* --- --- */
+.searchIcon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+/* --- Dark Mode --- */
+.adminContainer.dark .inputFiltro {
+  background-color: #3a3b3c;
+  border-color: #555;
+  color: #e4e6eb;
+}
+/* --- --- */
+.inputFiltro {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Lista de vagas */
+.vagasList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Item da lista */
+/* --- Dark Mode --- */
+.adminContainer.dark .vagaItem {
+  background-color: #3a3b3c;
+}
+
+.adminContainer.dark .vagaItem:hover {
+  background-color: #4f5051;
+}
+
+.adminContainer.dark .vagaInfo strong {
+  color: #e4e6eb;
+}
+
+.adminContainer.dark .vagaInfo span {
+  color: #e4e6eb;
+  background-color: #5f6061;
+}
+/* --- --- */
+.vagaItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.2s;
+}
+
+.vagaItem:hover {
+  background-color: #f1f1f1;
+}
+
+.vagaInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.vagaInfo strong {
+  font-size: 1.1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.vagaInfo span {
+  font-size: 0.9rem;
+  color: #666;
+  background-color: #eee;
+  padding: 3px 8px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Container para os botões de ação */
+.actionButtons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Estilo base para os botões de ação */
+.actionButton {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: opacity 0.3s;
+}
+
+.actionButton:hover {
+  opacity: 0.8;
+}
+
+.editButton {
+  background-color: #007bff; /* Azul */
+}
+
+.deleteButton {
+  background-color: #dc3545; /* Vermelho */
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+  .adminHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .vagaItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .actionButtons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

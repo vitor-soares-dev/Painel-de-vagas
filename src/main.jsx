@@ -1,7 +1,6 @@
 import React from "react";
 import App from "./App";
 import { BrowserRouter } from "react-router";
-import "./index.css";
 import { createRoot } from "react-dom/client";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { AuthProvider } from "./contexts/AuthContext";

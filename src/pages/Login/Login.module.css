@@ -1,0 +1,82 @@
+/* Container principal que cobre toda a tela e centraliza o conteúdo */
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altura total da tela */
+    background-color: #f0f2f5; /* Um cinza claro para o fundo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Estilo do formulário de login */
+  .loginForm {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Largura máxima do formulário */
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .loginForm h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  /* Estilo dos inputs */
+  .inputField {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura */
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .inputField:focus {
+    outline: none;
+    border-color: #007bff; /* Destaque azul ao focar */
+  }
+  
+  /* Estilo do botão de submit */
+  .submitButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Azul primário */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+  }
+  
+  /* Mensagem de erro */
+  .error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* --- Responsividade --- */
+  @media (max-width: 480px) {
+    .loginForm {
+      padding: 25px;
+    }
+  }
