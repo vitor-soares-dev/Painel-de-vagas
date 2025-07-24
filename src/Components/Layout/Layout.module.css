@@ -1,0 +1,10 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o layout ocupe no mínimo 100% da altura da tela */
+  }
+  
+  .main {
+    flex-grow: 1; /* Faz o conteúdo principal crescer, empurrando o rodapé para baixo */
+    width: 100%;
+  }
