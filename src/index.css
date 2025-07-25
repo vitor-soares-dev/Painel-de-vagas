@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --background-color: #f0f2f5;        /* Fundo principal da página */
-  --component-bg-color: #ffffff;      /* Fundo de cards, painéis, inputs */
+  --component-bg-color: #ffffff; 
+  --card-bg:#f1f1f1;     /* Fundo de cards, painéis, inputs */
   --text-color: #213547;              /* Cor do texto principal */
   --secondary-text-color: #6c757d;    /* Cor de texto secundário, placeholders */
   --border-color: #dee2e6;            /* Cor das bordas */
@@ -15,6 +16,8 @@
 /* Este bloco só será ativado quando o <body> tiver a classe "dark-mode" */
 body.dark-mode {
   --background-color: #18191a;
+  --card-bg:#3a3b3c;
+
   --component-bg-color: #242526;
   --text-color: #e4e6eb;
   --secondary-text-color: #b0b3b8;
